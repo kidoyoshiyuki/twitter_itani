@@ -2,7 +2,7 @@
 // 設定関連を読み込む
 include_once('../config.php');
 // 便利な関数を読み込む
-include_once('../until.php');
+include_once('../util.php');
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,7 +14,7 @@ include_once('../until.php');
 
 <body class="signup text-center"> 
     <main class="form-signup" >
-        <form action="sign-up.php" methot="post">
+        <form action="sign-up.php" method="post">
             <img src="/twitterclone/Views/img/logo-white.svg" alt="" class="logo-white">
             <h1>アカウントを作る</h1>
             <input type="text" class="form-control" name="nickname" placeholder="ニックネーム" maxlength="50" require autofocus>
