@@ -16,7 +16,7 @@
             </div>
             <div class="tweet-post">
                 <div class="my-icon">
-                    <img src="<?php echo HOME_URL;?>Views/img_uploaded/user/sample-person.jpg" alt="">
+                    <img src="<?php echo htmlspecialchars($view_user['image_path']) ?>" alt="">
                 </div>
                 <div class="input-area">
                     <form action="post.php" method="post" enctype="multipart/form-data">
@@ -32,11 +32,11 @@
             </div>
             <div class="ditch"></div>
 
-            <?php if (empty($view_tweet)):?>
+            <?php if (empty($view_tweets)):?>
                 <p class="p-3">ツイートがまだありません</p>
             <?php else: ?>
                 <div class="tweet-list">
-                <?php foreach ($view_tweet as $view_tweet):?>
+                <?php foreach ($view_tweets as $view_tweet):?>
                     <?php include('../views/common/tweet.php'); ?>     
                     <?php endforeach;?>
                 </div>
