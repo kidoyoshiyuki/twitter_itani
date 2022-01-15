@@ -2,7 +2,7 @@
 // 設定関連を読み込む
 include_once('../config.php');
 // 便利な関数を読み込む
-include_once('../until.php');
+include_once('../util.php');
 
 // ツイート一覧
 
