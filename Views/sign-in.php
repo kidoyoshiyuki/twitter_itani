@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <?php include_once('../views/common/head.php'); ?>
+    <?php include_once('../Views/common/head.php'); ?>
     <title>ログイン画面 / Twitterクローン</title>
     <meta name="descriotion" contentu="ログイン画面です。">
 </head>
