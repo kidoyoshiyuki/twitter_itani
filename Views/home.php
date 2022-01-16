@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 // 日本時間にする
 date_default_timezone_set('Asia/Tokyo');
 // URL/ディレクトリ設定
-define('HOME_URL', '/TwitterClone/');
+//define('HOME_URL', '/TwitterClone/');
  
 ///////////////////////////////////////
 // ツイート一覧
@@ -45,7 +45,6 @@ $view_tweets = [
  * @param string $name 画像ファイル名
  * @param string $type ユーザー画像かツイート画像
  * @return string
- */
 function buildImagePath(string $name = null, string $type)
 {
     if ($type === 'user' && !isset($name)) {
@@ -54,13 +53,14 @@ function buildImagePath(string $name = null, string $type)
  
     return HOME_URL . 'Views/img_uploaded/' . $type . '/' . htmlspecialchars($name);
 }
+ */
  
 /**
  * 指定した日時からどれだけ経過したかを取得
  *
  * @param string $datetime 日時
  * @return string
- */
+
 function convertToDayTimeAgo(string $datetime)
 {
     $unix = strtotime($datetime);
@@ -90,7 +90,7 @@ function convertToDayTimeAgo(string $datetime)
  
     return (int)$time . $unit;
 }
- 
+  */
  
  
 ?>
